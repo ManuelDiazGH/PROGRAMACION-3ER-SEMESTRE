@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es" id="top">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MiTienda</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="#top" class="site-header__logo">
+        <span class="site-header__mark">M</span>
+        <span class="site-header__brand">MiTienda</span>
+      </a>
+
+      <button class="site-header__toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+        <img src="menu-deep.png" alt="" width="24" height="24" />
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="#novedades">Novedades</a></li>
+          <li><a class="site-nav__link" href="#ofertas">Ofertas</a></li>
+          <li><a class="site-nav__link" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="main-flex">
+      <section class="section">
+        <div class="container">
+          <div class="panel">
+            <h2>Sistema de botones</h2>
+            <div class="btn-group">
+              <button class="btn btn--primary">Primario</button>
+              <button class="btn btn--secondary">Secundario</button>
+              <button class="btn btn--outline">Outline</button>
+              <button class="btn btn--danger">Peligro</button>
+              <button class="btn btn--primary btn--icon">
+                <img class="btn__icon" src="search.png" alt="" width="18" height="18" />
+                <span>Con ícono</span>
+              </button>
+              <button class="btn btn--secondary" disabled>Deshabilitado</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="panel">
+            <h2>Tarjeta de Producto</h2>
+            <article class="product-card">
+              <div class="product-card__media">
+                <img src="zapatillas.webp" alt="Zapatillas deportivas MiTienda" class="product-card__img" />
+                <span class="product-card__badge">Nuevo</span>
+              </div>
+              <div class="product-card__info">
+                <h3 class="product-card__title">Zapatillas Runner Pro</h3>
+                <p class="product-card__desc">
+                  Amortiguación ligeraa, malla respirable y suela con agarre. Ideales para entrenamiento diario.
+                </p>
+                <div class="product-card__pricing">
+                  <span class="product-card__price">$24.999</span>
+                  <span class="product-card__old-price">$29.999</span>
+                </div>
+                <div class="btn-group product-card__actions">
+                  <button class="btn btn--primary btn--icon" type="button">
+                    <span>Comprar Ahora</span>
+                  </button>
+                  <button class="btn btn--outline" type="button">
+                    <img class="btn__icon" src="circle-dashed-plus.png" alt="" width="18" height="18" />
+                    Añadir
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="novedades" class="section">
+      <div class="container">
+        <div class="panel">
+          <h2>Novedades</h2>
+          <p>Últimas incorporaciones a la tienda, colección temporada.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ofertas" class="section">
+      <div class="container">
+        <div class="panel">
+          <h2>Ofertas</h2>
+          <p>Promociones activas, combos y descuentos por tiempo limitado.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container">
+        <div class="panel">
+          <h2>Contacto</h2>
+          <p>Contáctanos aquí: <a href="mailto:manueldiaz@gmail.com">manueldiaz@gmail.com</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© <span id="year"></span> MiTienda. Todos los derechos reservados.</p>
+      <a class="site-footer__top" href="#top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
