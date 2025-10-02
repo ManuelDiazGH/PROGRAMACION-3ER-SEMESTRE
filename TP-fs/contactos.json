@@ -1,0 +1,12 @@
+[
+  {
+    "nombre": "Juan Perez",
+    "telefono": "123-456-7890",
+    "email": "juan@example.com"
+  },
+  {
+    "nombre": "Carlos López",
+    "telefono": "987-654-3210",
+    "email": "carlos@example.com"
+  }
+]
